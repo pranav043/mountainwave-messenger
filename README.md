@@ -16,6 +16,12 @@ https://mountainwave-messenger.onrender.com/
 - 👌 Global state management with Zustand
 - 🐞 Error handling both on the server and on the client
 
+## Screenshots
+
+![App Screenshot](https://ibb.co/wBBGr5M)
+
+![Encrypted Messages Proof](https://ibb.co/f2T6rF2)
+
 ## Installation
 
 Run Following commands to run this project-
