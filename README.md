@@ -37,8 +37,6 @@ To run this project, you will need to add the following environment variables to
 
 `JWT_SECRET`: "SecretKey"
 
-`NODE_ENV`: "development"
-
 `ENC_ALGO`: "aes-256-cbc"
 
 `ENC_KEY`: "32-bit-key"
