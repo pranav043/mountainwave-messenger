@@ -9,7 +9,7 @@ https://mountainwave-messenger.onrender.com/
 ## Features
 
 - 🌟 Tech stack: NodeJs + ExpressJs + MongoDB + ReactJs + Socket.io + TailwindCSS + Daisy UI
-- 🔒 Encryption for Messages
+- 🔒 Encryption for Messages (aes-256-cbc algorithm along with iv number spinoff & 32 bit key, making it almost impossible to decrypt)
 - 🎃 Authentication && Authorization with JWT
 - 👾 Real-time messaging with Socket.io
 - 🚀 Online user status (Socket.io and React Context)
@@ -18,7 +18,11 @@ https://mountainwave-messenger.onrender.com/
 
 ## Screenshots
 
+Chat Page-
+
 ![App Screenshot](https://i.ibb.co/xXX98xJ/mountain.png)
+
+Messages Encrypted in DB-
 
 ![Encrypted Messages Proof](https://i.ibb.co/kxPbqBx/encrypted.png)
 
