@@ -18,9 +18,9 @@ https://mountainwave-messenger.onrender.com/
 
 ## Screenshots
 
-![App Screenshot](https://ibb.co/wBBGr5M)
+![App Screenshot](https://i.ibb.co/xXX98xJ/mountain.png)
 
-![Encrypted Messages Proof](https://ibb.co/f2T6rF2)
+![Encrypted Messages Proof](https://i.ibb.co/kxPbqBx/encrypted.png)
 
 ## Installation
 
