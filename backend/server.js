@@ -1,8 +1,10 @@
 import express from "express";
 import dotenv from "dotenv";
-dotenv.config();
+import path from "path";
 import cookieParser from "cookie-parser";
 import cors from "cors";
+dotenv.config();
+const __dirname = path.resolve();
 
 import authRoutes from "./routes/auth.routes.js";
 import messageRoutes from "./routes/message.routes.js";
@@ -17,23 +19,17 @@ app.use(cors());
 app.use(express.json());
 app.use(cookieParser());
 
-server.listen(PORT, () => {
-  connectToMongoDB();
-  console.log(`Server Running on port ${PORT}`);
-});
-
 app.use("/api/auth", authRoutes);
 app.use("/api/messages", messageRoutes);
 app.use("/api/users", userRoutes);
 
-app.get("/", (req, res) => {
-  res.send("MountainWave Messenger Server");
+app.use(express.static(path.join(__dirname, "/frontend/dist")));
+
+app.get("*", (req, res) => {
+  res.sendFile(path.join(__dirname, "frontend", "dist", "index.html"));
 });
 
-app.get("/health", (req, res) => {
-  res.status(200).json({ status: "Healthy" });
-});
-
-app.all("*", (req, res) => {
-  res.status(404).json({ error: "Route Not Found!" });
+server.listen(PORT, () => {
+  connectToMongoDB();
+  console.log(`Server Running on port ${PORT}`);
 });
